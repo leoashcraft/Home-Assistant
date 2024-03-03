@@ -1,0 +1,4 @@
+sensor:
+    name: embysessionplayroom
+    command: !secret emby_command
+    scan_interval: 4
