@@ -1,0 +1,9 @@
+#rest_command:
+  emby_start_show:
+    url: !secret emby_rest_url
+    method: POST
+    headers:
+      accept: '*/*'
+      Content-Type: 'application/json'
+    payload: !secret emby_rest_payload
+    
