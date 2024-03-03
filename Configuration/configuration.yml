@@ -1,0 +1,109 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+api:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+  extra_module_url:
+    - /local/community/lovelace-card-mod/card-mod.js
+    
+# Text to speech
+tts:
+  - platform: google_translate
+  
+zha: 
+  database_path: /config/zigbee.db 
+  enable_quirks: true
+  custom_quirks_path: /config/zha_quirks/
+
+command_line: !include command_line.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+rest_command: !include rest.yaml
+
+zone:
+  - name: Home
+    latitude: **********
+    longitude: **********
+    radius: 27
+    icon: mdi:account-multiple
+    
+device_tracker:
+  - platform: iphonedetect
+    consider_home: 15
+    new_device_defaults:
+      track_new_devices: true
+    hosts:
+      hostname1: **********
+      hostname2: **********
+
+spotcast:
+  sp_dc: !secret spotcast_dc
+  sp_key: !secret spotcast_key
+  country: US
+     
+sensor:
+  - platform: time_date
+    display_options:
+      - 'date_time_iso'
+template:
+  - sensor:
+      - name: "Date Time"
+        state: "{{ as_timestamp(states('sensor.date_time_iso')) | timestamp_custom('%A, %B %-d, %G - %I:%M %p') }}"
+        icon: "mdi:calendar-clock"
+  - sensor:
+      - name: "Date"
+        state: "{{ as_timestamp(states('sensor.date_time_iso')) | timestamp_custom('%A, %B %-d, %G') }}"
+        icon: "mdi:calendar"
+  - sensor:
+      - name: "Time"
+        state: "{{ as_timestamp(states('sensor.date_time_iso')) | timestamp_custom('%I:%M %p') }}"
+        icon: "mdi:clock-outline"
+  - sensor:
+      - name: "Climate - Outside Temperature"
+        unique_id: 'climate_outside_temperature'
+        state_class: measurement
+        unit_of_measurement: "°F"
+        device_class: temperature
+        state: "{{ state_attr('weather.forecast_woodlands_park', 'temperature')  }}"
+  - sensor:
+      - name: "Climate - Outside Humidity"
+        unique_id: 'climate_outside_humidity'
+        state_class: measurement
+        unit_of_measurement: "%"
+        device_class: humidity
+        state: "{{ state_attr('weather.forecast_woodlands_park', 'humidity')  }}"
+        switch:
+switch:
+  - platform: template
+    switches:
+      master_bedroom_side_fan:
+        value_template: "{{ is_state('light.master_bedroom_side_fan', 'on') }}"
+        turn_on:
+          service: light.turn_on
+          data:
+            entity_id: light.master_bedroom_side_fan
+            brightness_pct: 100
+            transition: no
+        turn_off:
+          service: light.turn_off
+          data:
+            entity_id: light.master_bedroom_side_fan
+            brightness_pct: 0
+            transition: no
+
+media_player:
+  - platform: emby
+    host: **********
+    ssl: False
+    port: !secret emby_port
+    api_key: !secret emby_token
+
+input_datetime:
+  anndee_trigger_time:
+    name: "turn on anndee show"
+    has_date: false
+    has_time: true
+    initial: '07:00'
