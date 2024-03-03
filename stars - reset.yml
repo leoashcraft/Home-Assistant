@@ -1,0 +1,32 @@
+alias: Stars Reset
+sequence:
+  - if:
+      - condition: time
+        before: "08:29:00"
+        after: "22:59:00"
+    then:
+      - service: remote.send_command
+        target:
+          entity_id: remote.anndees_remote
+        data:
+          device: remote.anndees_remote
+          command:
+            - >-
+              b64:Jh5QAAABI44SExISEhMSEhITEBMSExETEzUSNhE2EjcRNxA3EjYSNhE2EhMRExI2EjUSExETEhISExE2ETcSEhITETcRNhE3EgAE4wABI0kQAA0FAAAAAAAA
+            - >-
+              b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+            - b64:AAAAAAAA
+            - b64:AAAAAAAA
+            - >-
+              b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+            - >-
+              b64:JhtQAAABJJAQExEUERMRFBAVEBMRFBASEjcRNxE4DzgRNxE3ETYSNxETEhMRExATERQQFBE2EhMRNhE3ETcRNhI2ETcRFBE2EQAE6AABIkgSAA0FAAAAAAAA
+    else:
+      - service: remote.send_command
+        target:
+          entity_id: remote.anndees_remote
+        data:
+          device: remote.anndees_remote
+          command:
+            - >-
+              b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA

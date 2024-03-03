@@ -1,0 +1,11 @@
+alias: Stars Power
+sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.anndees_remote
+    data:
+      device: remote.anndees_remote
+      command:
+        - >-
+          b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+mode: single
