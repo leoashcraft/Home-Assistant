@@ -1,0 +1,967 @@
+ac_cool:
+  alias: AC - Cool
+  sequence:
+  - device_id: ef39c1ac36d4faab2842f2173b99cbc0
+    domain: climate
+    entity_id: 450014d821f4d9b8db61705e971cc348
+    type: set_hvac_mode
+    hvac_mode: cool
+  mode: single
+ac_off:
+  alias: AC - Off
+  sequence:
+  - device_id: ef39c1ac36d4faab2842f2173b99cbc0
+    domain: climate
+    entity_id: 450014d821f4d9b8db61705e971cc348
+    type: set_hvac_mode
+    hvac_mode: 'off'
+  mode: single
+ac_heat:
+  alias: AC - Heat
+  sequence:
+  - device_id: ef39c1ac36d4faab2842f2173b99cbc0
+    domain: climate
+    entity_id: 450014d821f4d9b8db61705e971cc348
+    type: set_hvac_mode
+    hvac_mode: heat
+  mode: single
+ac_67:
+  alias: AC - 67
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 67
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_68:
+  alias: AC - 68
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 68
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_69:
+  alias: AC - 69
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 69
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_70:
+  alias: AC - 70
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 70
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_71:
+  alias: AC - 71
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 71
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_72:
+  alias: AC - 72
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 72
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_73:
+  alias: AC - 73
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 73
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_74:
+  alias: AC - 74
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 74
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_75:
+  alias: AC - 75
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 75
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_76:
+  alias: AC - 76
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 76
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_77:
+  alias: AC - 77
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 77
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_78:
+  alias: AC - 78
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 78
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_79:
+  alias: AC - 79
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 79
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_80:
+  alias: AC - 80
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 80
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_81:
+  alias: AC - 81
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 81
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_82:
+  alias: AC - 82
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 82
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_66:
+  alias: AC - 66
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 66
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_65:
+  alias: AC - 65
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 65
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_64:
+  alias: AC - 64
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 64
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_63:
+  alias: AC - 63
+  sequence:
+  - service: climate.set_temperature
+    data:
+      temperature: 63
+    target:
+      device_id: ef39c1ac36d4faab2842f2173b99cbc0
+  mode: single
+ac_toggle:
+  alias: AC - Toggle
+  sequence:
+  - if:
+    - condition: or
+      conditions:
+      - condition: device
+        device_id: ef39c1ac36d4faab2842f2173b99cbc0
+        domain: climate
+        entity_id: 450014d821f4d9b8db61705e971cc348
+        type: is_hvac_mode
+        hvac_mode: heat_cool
+      - condition: device
+        device_id: ef39c1ac36d4faab2842f2173b99cbc0
+        domain: climate
+        entity_id: 450014d821f4d9b8db61705e971cc348
+        type: is_hvac_mode
+        hvac_mode: cool
+      - condition: device
+        device_id: ef39c1ac36d4faab2842f2173b99cbc0
+        domain: climate
+        entity_id: 450014d821f4d9b8db61705e971cc348
+        type: is_hvac_mode
+        hvac_mode: heat
+    then:
+    - device_id: ef39c1ac36d4faab2842f2173b99cbc0
+      domain: climate
+      entity_id: 450014d821f4d9b8db61705e971cc348
+      type: set_hvac_mode
+      hvac_mode: 'off'
+    else:
+    - device_id: ef39c1ac36d4faab2842f2173b99cbc0
+      domain: climate
+      entity_id: 450014d821f4d9b8db61705e971cc348
+      type: set_hvac_mode
+      hvac_mode: heat_cool
+  mode: single
+stars_power:
+  alias: Stars Reset
+  sequence:
+  - if:
+    - condition: time
+      before: 08:29:00
+      after: '22:59:00'
+    then:
+    - service: remote.send_command
+      target:
+        entity_id: remote.anndees_remote
+      data:
+        device: remote.anndees_remote
+        command:
+        - b64:Jh5QAAABI44SExISEhMSEhITEBMSExETEzUSNhE2EjcRNxA3EjYSNhE2EhMRExI2EjUSExETEhISExE2ETcSEhITETcRNhE3EgAE4wABI0kQAA0FAAAAAAAA
+        - b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+        - b64:AAAAAAAA
+        - b64:AAAAAAAA
+        - b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+        - b64:JhtQAAABJJAQExEUERMRFBAVEBMRFBASEjcRNxE4DzgRNxE3ETYSNxETEhMRExATERQQFBE2EhMRNhE3ETcRNhI2ETcRFBE2EQAE6AABIkgSAA0FAAAAAAAA
+    else:
+    - service: remote.send_command
+      target:
+        entity_id: remote.anndees_remote
+      data:
+        device: remote.anndees_remote
+        command:
+        - b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+'1691130449006':
+  alias: Stars Power
+  sequence:
+  - service: remote.send_command
+    target:
+      entity_id: remote.anndees_remote
+    data:
+      device: remote.anndees_remote
+      command:
+      - b64:JgBQAAABJY8SEhITEhISExISEhMQExISEjcRNxE2EjYSNhI1EjcRNxI1EhISNxETEhISExE2EhISEhI3ERMRNhI2EjcRExE2EgAE7AABJUkRAA0FAAAAAAAA
+  mode: single
+'1691173522239':
+  alias: Strip Lights
+  sequence:
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Brighter
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABH5IRExITERISExETEhMRExITETYRNxE3EjUSNhM2ETYRNxEUERMSNRI2EzUSExA3EhMSNhE2EhMRExETEzYREhM1EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Darker
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJASEhITERMSExATEhMRExITETcSNRE3EjYSNRI3ETcRNhI2ERMSNxE2ETcRExI3EBMRExI3ERMSExETETYSExE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Play/Pause
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIZARExMSERMSExATEhMRExITETcSNRI2EjYSNxA3ETcRNxI1EhMSEhITERMSExI1ERMSExE3EzURNhI3EjYSEhE2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Power
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJATEhETEhMRExETERMSExETEjcRNhE3ETcSNRI2EjcRNxAUERMRExITERMSExE2EhMRNxE3EjUSNhI3ETYRExI3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: R
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJERExITERMTEhETEhMREhITEjYRNxI1EzUSNxE2ETcSNhITERMRExE3ETcSExE2ERMTNhE3EDcRExMSETcSEhE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: G
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJASExITERMSExETEhMQExITETcRNxE2EjYSNxE2EjYSNhI1ExISExE3ETcQExI3ERMSExE2ETcSExETEjYRExE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Brighter
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABH5ISEhETERMSExETEhMRExITEDcSNhI3ETYRNxI2EzQTNhE3ERMRNhITEhMRExI2ERMRExI2EhMRNxI1EjcRExI1EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: W
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABH5ESExETERMRExITERMSExETEjUSNxE3ETYRNxI2EzURNxISExIRNxATEhMRExI3EhISNRM2ERMSNhI1EjcSEhM1EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: RR
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJATEhETExIRExITERMRExETEzUTNRI2ETcSNhI1EjcRNxETERMRNxITETcRExE2EhMRNxI1EhMRNxITEjYQExI3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: GG
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJESEhITERMRExETEhMRExITEjYRNhI3ETcRNhM1EjcSNRE3ExIRNxETETcSEhI2EhMSExE2ERMSNxETEjUSExI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: BB
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJASExITERMSExETEhMREhITETcRNxI1EjcRNxE2EjYSNxE2EhISExE3EhMSEhI1ExIRExI3EjURExI3ETcRExE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: WW
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIY8SExETEhMRExETERMSExETEjYSNhE3ETcSNRI2EjcRNxATExIRExI3ERMSExA3ERMSNxE3ETYSExE3EjURExI3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: RRR
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABH5ISEhETERMSExETEhMRExITETYRNxI2EjUSNxE3ETcRNhITERMSExEUETUSExE3EhMRNhE3EjYSNhETEjYSExE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: GGG
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIY8TEhETEhMRExITEBMSExETEjcRNxA3EjYSNhE3ETcRNxI1EhMRExITETcRExI2ERMSExE3ETYRNxITETcREhI3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: BBB
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJESEhITERMQFBETERMSExETEjcQNxE3EjYSNRI3ETcSNRE3EhMSNhE2ERMSExE3EhMRExE2EhMRExI3ETYRExI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: WWW
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJARExITERMSExETEhISExETETcSNhE3ETcRNxI1EzUTNhETERMSNhE3EhISEhE3ExIRNxI1EhMRExI2EjYRExI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: RRRR
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJARExMSERMSExETERMRExITETcSNhE2EzYRNxE2ETcSNhITEhIRNhI3EjYRExETERMSNxE3ERMRExETEjcRNxI1EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: GGGG
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJASEhITERMSEhETEhMRExITETcRNhE3EjYSNxA3EjYRNxI1ExISNhI2EzQSExISEhMRExI3EhIRExETEjYSNhI2EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: BBBB
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJATEhISEhMRExMSEhESExETEjYSNhE3ETcRNxI1EzUSNxISETYSNhI3EDcRExITEhISNRMSERMSExETEjcRNhI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: WWWW
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJESEhITERMSExISERMRExITETcRNxE2EjcSNhE2EjYTNRI2ETcRNxI2ETYTEhITERMSExETERQQExITETcRNxE2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: RRRRR
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJESEhITERMSExATEhMRExITETcRNhI2EjYSNhE3ETcSNhETERMTEhE3ETcRExETEhMRNxI2EDcSExETEjYSNRI3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: GGGGG
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABH5ESExESExIRExITERMSExETEzQSNxE3EDcRNxI2ETcRNxI2EBMSExE3EjYRExETEhMRExI2EjYRExITETcSNRE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: BBBBB
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJATEhISEhIRExITERMSExETEjcRNhI2ETcRNhI2EjcRNhISEjYSExE2EzUSExETEhMRNhMSETcRExITETYSNhI2EwAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: WWWWW
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJESEhITERMRExETEhMRExITETcQNxI2EjYSNhE3ETcSNRI2EjcRExI1EjcSEhITERMSExATEjYTEhETEjYRNxE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: R +
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABH5ETEhEUEBMRExITERMTEhETEjYSNhI2ETYSNhI3ETYRNxITERMSNhMRETcSExISEhMRNhI2EhMRNxETETcRNxE3EAAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: G +
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABH5ESExETEhMQExITERMSExETEjYRNhI3ETcQNxI2EjYRNxE3ERMTNhATEjYSExETEhMRExE2EhMRNxITETYRNxI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: B +
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJESEhITERMSExETERMRExITETcRNxE2EjcRNxE2EjYSNhITEDcSNhITETYSEhITERQRNxETERMRNxETEjcRNhE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Quicker
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJESEhETERMTEhETEhMRExITETYSNhI2EjYRNxE3EjYRNxE3ETcSNRITETcSEhITERISExITERMSNhITETYRNxI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: R -
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIZARExITEhISExETERMRExITEjYSNRE3EjYTNhE2ETcRNxITERISExISEjYSExETERMSNhE3EjYRNhMSEjYTNBI3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: G -
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJATEhITERMSExATEhMRExITETcRNhI2EzUTNRE3ETcSNhE2EhMRExMSEjYSEhISEhMSEhI2EzUSNhETEzYSNRI2EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: B -
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJARExITERMSExISERMRFBETETcSNRI2EjcRNxA3EjYSNhETETcSExETEjYRExISEhMRNxEUETYSNhISEjcRNhE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Slower
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIZARExITEhISExETEhMRExISEjYRNxI2EjUSNxE3EjUSNhI2EjYRExITETcRExITEhISEhETEjcSNhETETcSNhE3EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: DIY1
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJESEhITERMSExESExIRExITEjYSNRI2EzYSNRE3EjYSNhISEhITNRI3EhIRExETEhMRNxI2ERMRExI2EzUSNhI2EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: DIY2
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJASExISERMRExETEhMRExMSETcSNRM1EjcRNhI2ETcTNRI2ERMSNhI2ERMRExMSERMTEhE3EBQRExE3EjYTNRE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: DIY3
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIY8SExITERMSEhISEhMSEhITEjYRNhI2EzUTNRI2EjYSNhETETcSNhI2EhIRFBETEhMRNxETERMRExI2EzYSNRE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Auto
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJESEhMSEBMTEhISExIRExITEjUSNhM1EjcRNhE3EjYTNBI3EjYSNRI2EhMRExMSERMSEhETExIRExI3ETYRNxI2EwAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: DIY4
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABH5ISEhITEBMSExISEhMSEhMSETYRNxE3EzUSNhI2EjYSNRITEhISExE3ERMRExISExIRNxI2EzURExI2EzUSNhI2EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: DIY5
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJASExETERMSEhITERMSExETEjUTNhE3ETYSNhI2EjYRNxE3EhISExE2EhMRExITEhIRFBI1ETcRExI3EjURNxE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: DIY6
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABBpETERETExISEhITERMSExETETYTNhE3EjURNxM1EjUTNhETEjYSExI1EhMRExITEhISNhISETcSEhI3EjURNxE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Flash
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIJESEhITEhETEhETExIRExITETcRNhI2EjcQNxI2EjYTNRE3EjYRExM1ERMSExISEhMRExISEjYRExM1EzURNxE3EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Jump 3
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJASExIREhMRExITERMSExETETcRNxE3ETYSNhI2EzURNxISEhMRNhEUEhISExETEhMRNhE3ERMSNxI1ETcSNhI1EgAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Jump 7
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBQAAABIZESERITERMSExETEhMSEhMSEDcSNhI2ETcRNxgwEjUSNhM1EhMRNhITERMSExETEhMRExE2ExIRNxE2EjYTNhI2EAAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Fade 3
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABH5ESExETERMSEhITERMSExETEjUTNRI3ETYSNhI2EjYSNhETEjYTNBITEhISExETEhMSNRITERMSNhM2EDcSNhI2EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  - if:
+    - condition: state
+      entity_id: input_select.strip_lights
+      state: Fade 7
+    then:
+    - service: remote.send_command
+      data:
+        delay_secs: 0.4
+        hold_secs: 0
+        command:
+        - b64: JgBYAAABIJESEhITERMSExETEhMQExITETcSNhE2EjYSNhI2ETcRNxI2EjUTNhETEhMRExETERMSExETEhMRNxA3EjYSNhM1EQAE
+        device: remote.anndees_remote
+      target:
+        device_id: remote.anndees_remote
+  mode: single
+  icon: mdi:led-strip-variant
+sprinklers_backyard:
+  alias: Sprinklers - Backyard
+  sequence:
+  - service: bhyve.start_watering
+    data:
+      entity_id: switch.north_zone
+      minutes: '{{ states(''input_select.ac_mode'') }}'
+  - delay:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  - wait_for_trigger:
+    - platform: state
+      entity_id:
+      - switch.south_zone
+      to: 'off'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 30
+  - service: bhyve.start_watering
+    data:
+      entity_id: switch.magnolia_zone
+      minutes: '{{ states(''input_select.ac_mode'') }}'
+  - delay:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  - wait_for_trigger:
+    - platform: state
+      entity_id:
+      - switch.south_zone
+      to: 'off'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 30
+  - service: bhyve.start_watering
+    data:
+      entity_id: switch.patio_zone
+      minutes: '{{ states(''input_select.ac_mode'') }}'
+  - delay:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  - wait_for_trigger:
+    - platform: state
+      entity_id:
+      - switch.south_zone
+      to: 'off'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 30
+  - service: bhyve.start_watering
+    data:
+      entity_id: switch.south_zone
+      minutes: '{{ states(''input_select.ac_mode'') }}'
+  mode: single
+  icon: mdi:sprinkler
